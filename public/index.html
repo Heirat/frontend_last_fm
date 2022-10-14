@@ -1,37 +1,616 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Червинский А.А. ИВТ-41</title>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <div class="header">
+      <div class="header-inner-wrap">
+        <div class="header-logo">
+          <a href="/"><img src="static/images/logo.png" alt=""></a>
+        </div>
+
+        <form class="header-search-form" id="header-search" action="/search.html" method="get">
+          <div class="header-search-inner-wrap">
+            <input id="header-search-field" class="header-search-field" type="text" placeholder="Search for music…">
+            <button class="header-search-submit" type="submit">Search</button>
+          </div>
+        </form>
+
+        <ul class="header-nav" id="header-nav">
+          <li class="header-nav-item"><a class=" header-nav-control " href="/">Live</a></li>
+          <li class="header-nav-item"><a class=" header-nav-control header-nav-control--active" href="/">Music</a>
+          </li>
+          <li class="header-nav-item"><a class=" header-nav-control " href="/">Charts</a></li>
+          <li class="header-nav-item"><a class=" header-nav-control " href="/">Events</a></li>
+          <li class="header-nav-item"><a class=" header-nav-control " href="/">Features</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main class="main">
+      <h1 class="main-heading">Music</h1>
+      <section class="popular-artists">
+        <h2 class="section-heading">Hot right now</h2>
+        <ol class="artists">
+
+          <li class="list-item-wrap">
+            <div class="list-item ">
+
+              <img class="avatar"
+                src="https://lastfm.freetls.fastly.net/i/u/300x300/d651025ce0f11bfdba128f44f1d2e370.jpg" loading="lazy">
+
+
+              <h3 class="list-item-name">
+                <a href="/" class="list-item-name-link ">Taylor Swift</a>
+              </h3>
+
+              <section class="regular-tags music-more-list-item-regular-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">pop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">country</a></li>
+                  <li class="tag"><a class="tag-link" href="/">female vocalists</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="list-item-wrap">
+            <div class="list-item ">
+
+              <img class="avatar"
+                src="https://lastfm.freetls.fastly.net/i/u/300x300/8771c59006a609aec6ea2d1a6802b98a.jpg" loading="lazy">
+
+
+              <h3 class="list-item-name">
+                <a href="/" class="list-item-name-link ">The 1975</a>
+              </h3>
+
+              <section class="regular-tags music-more-list-item-regular-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">indie rock</a></li>
+                  <li class="tag"><a class="tag-link" href="/">indie</a></li>
+                  <li class="tag"><a class="tag-link" href="/">british</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="list-item-wrap">
+            <div class="list-item ">
+
+              <img class="avatar"
+                src="https://lastfm.freetls.fastly.net/i/u/300x300/abe173540712c2332d0c46b3eeb1d1dc.jpg" loading="lazy">
+
+
+              <h3 class="list-item-name">
+                <a href="/" class="list-item-name-link ">Kanye West</a>
+              </h3>
+
+              <section class="regular-tags music-more-list-item-regular-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">hip-hop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">rap</a></li>
+                  <li class="tag"><a class="tag-link" href="/">hip hop</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="list-item-wrap">
+            <div class="list-item ">
+
+              <img class="avatar"
+                src="https://lastfm.freetls.fastly.net/i/u/300x300/3200a1a02c7bbb23f51d75bd23c05c7e.jpg" loading="lazy">
+
+
+              <h3 class="list-item-name">
+                <a href="/" class="list-item-name-link ">j-hope</a>
+              </h3>
+
+              <section class="regular-tags music-more-list-item-regular-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">k-pop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">hip-hop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">korean</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="list-item-wrap">
+            <div class="list-item ">
+
+              <img class="avatar"
+                src="https://lastfm.freetls.fastly.net/i/u/300x300/abe173540712c2332d0c46b3eeb1d1dc.jpg" loading="lazy">
+
+
+              <h3 class="list-item-name">
+                <a href="/" class="list-item-name-link ">Kanye West</a>
+              </h3>
+
+              <section class="regular-tags music-more-list-item-regular-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">hip-hop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">rap</a></li>
+                  <li class="tag"><a class="tag-link" href="/">hip hop</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="list-item-wrap">
+            <div class="list-item ">
+
+              <img class="avatar"
+                src="https://lastfm.freetls.fastly.net/i/u/300x300/8771c59006a609aec6ea2d1a6802b98a.jpg" loading="lazy">
+
+
+              <h3 class="list-item-name">
+                <a href="/" class="list-item-name-link ">The 1975</a>
+              </h3>
+
+              <section class="regular-tags music-more-list-item-regular-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">indie rock</a></li>
+                  <li class="tag"><a class="tag-link" href="/">indie</a></li>
+                  <li class="tag"><a class="tag-link" href="/">british</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="list-item-wrap">
+            <div class="list-item ">
+
+              <img class="avatar"
+                src="https://lastfm.freetls.fastly.net/i/u/300x300/d651025ce0f11bfdba128f44f1d2e370.jpg" loading="lazy">
+
+
+              <h3 class="list-item-name">
+                <a href="/" class="list-item-name-link ">Taylor Swift</a>
+              </h3>
+
+              <section class="regular-tags music-more-list-item-regular-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">pop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">country</a></li>
+                  <li class="tag"><a class="tag-link" href="/">female vocalists</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="list-item-wrap">
+            <div class="list-item ">
+
+              <img class="avatar"
+                src="https://lastfm.freetls.fastly.net/i/u/300x300/3200a1a02c7bbb23f51d75bd23c05c7e.jpg" loading="lazy">
+
+
+              <h3 class="list-item-name">
+                <a href="/" class="list-item-name-link ">j-hope</a>
+              </h3>
+
+              <section class="regular-tags music-more-list-item-regular-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">k-pop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">hip-hop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">korean</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="list-item-wrap">
+            <div class="list-item ">
+
+              <img class="avatar"
+                src="https://lastfm.freetls.fastly.net/i/u/300x300/8771c59006a609aec6ea2d1a6802b98a.jpg" loading="lazy">
+
+
+              <h3 class="list-item-name">
+                <a href="/" class="list-item-name-link ">The 1975</a>
+              </h3>
+
+              <section class="regular-tags music-more-list-item-regular-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">indie rock</a></li>
+                  <li class="tag"><a class="tag-link" href="/">indie</a></li>
+                  <li class="tag"><a class="tag-link" href="/">british</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="list-item-wrap">
+            <div class="list-item ">
+
+              <img class="avatar"
+                src="https://lastfm.freetls.fastly.net/i/u/300x300/abe173540712c2332d0c46b3eeb1d1dc.jpg" loading="lazy">
+
+
+              <h3 class="list-item-name">
+                <a href="/" class="list-item-name-link ">Kanye West</a>
+              </h3>
+
+              <section class="regular-tags music-more-list-item-regular-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">hip-hop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">rap</a></li>
+                  <li class="tag"><a class="tag-link" href="/">hip hop</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="list-item-wrap">
+            <div class="list-item ">
+
+              <img class="avatar"
+                src="https://lastfm.freetls.fastly.net/i/u/300x300/8771c59006a609aec6ea2d1a6802b98a.jpg" loading="lazy">
+
+
+              <h3 class="list-item-name">
+                <a href="/" class="list-item-name-link ">The 1975</a>
+              </h3>
+
+              <section class="regular-tags music-more-list-item-regular-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">indie rock</a></li>
+                  <li class="tag"><a class="tag-link" href="/">indie</a></li>
+                  <li class="tag"><a class="tag-link" href="/">british</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="list-item-wrap">
+            <div class="list-item ">
+
+              <img class="avatar"
+                src="https://lastfm.freetls.fastly.net/i/u/300x300/d651025ce0f11bfdba128f44f1d2e370.jpg" loading="lazy">
+
+
+              <h3 class="list-item-name">
+                <a href="/" class="list-item-name-link ">Taylor Swift</a>
+              </h3>
+
+              <section class="regular-tags music-more-list-item-regular-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">pop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">country</a></li>
+                  <li class="tag"><a class="tag-link" href="/">female vocalists</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+        </ol>
+      </section>
+
+      <section class="popular-tracks">
+        <h2 class="section-heading">Popular tracks</h2>
+        <ol class="tracks">
+          <li class="tracks-item-wrap">
+            <img class="cover-art"
+              src="https://lastfm.freetls.fastly.net/i/u/300x300/70ff23ed846e3e4a14717863e71ba8dc.jpg" loading="lazy">
+            <div class="tracks-item ">
+              <h3 class="tracks-item-name">
+                <a href="/" class="tracks-item-name-link ">MORE</a>
+              </h3>
+              <p class="tracks-item-artist">
+                <a class="tracks-item-artist-link" href="/">j-hope</a>
+              </p>
+              <section class="regular-tags tracks-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">rock</a></li>
+                  <li class="tag"><a class="tag-link" href="/">hip-hop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">rap</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="tracks-item-wrap">
+            <img class="cover-art"
+              src="https://lastfm.freetls.fastly.net/i/u/300x300/e16905d22e5913535a8c6acadc781659.jpg" loading="lazy">
+            <div class="tracks-item ">
+              <h3 class="tracks-item-name">
+                <a href="/" class="tracks-item-name-link ">Left and Right</a>
+              </h3>
+              <p class="tracks-item-artist">
+                <a class="tracks-item-artist-link" href="/">Charlie Puth</a>
+              </p>
+              <section class="regular-tags tracks-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">pop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">jungkook</a></li>
+                  <li class="tag"><a class="tag-link" href="/">2022</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="tracks-item-wrap">
+            <img class="cover-art"
+              src="https://lastfm.freetls.fastly.net/i/u/300x300/70ff23ed846e3e4a14717863e71ba8dc.jpg" loading="lazy">
+            <div class="tracks-item ">
+              <h3 class="tracks-item-name">
+                <a href="/" class="tracks-item-name-link ">MORE</a>
+              </h3>
+              <p class="tracks-item-artist">
+                <a class="tracks-item-artist-link" href="/">j-hope</a>
+              </p>
+              <section class="regular-tags tracks-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">rock</a></li>
+                  <li class="tag"><a class="tag-link" href="/">hip-hop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">rap</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="tracks-item-wrap">
+            <img class="cover-art"
+              src="https://lastfm.freetls.fastly.net/i/u/300x300/70ff23ed846e3e4a14717863e71ba8dc.jpg" loading="lazy">
+            <div class="tracks-item ">
+              <h3 class="tracks-item-name">
+                <a href="/" class="tracks-item-name-link ">MORE</a>
+              </h3>
+              <p class="tracks-item-artist">
+                <a class="tracks-item-artist-link" href="/">j-hope</a>
+              </p>
+              <section class="regular-tags tracks-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">rock</a></li>
+                  <li class="tag"><a class="tag-link" href="/">hip-hop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">rap</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="tracks-item-wrap">
+            <img class="cover-art"
+              src="https://lastfm.freetls.fastly.net/i/u/300x300/70ff23ed846e3e4a14717863e71ba8dc.jpg" loading="lazy">
+            <div class="tracks-item ">
+              <h3 class="tracks-item-name">
+                <a href="/" class="tracks-item-name-link ">MORE</a>
+              </h3>
+              <p class="tracks-item-artist">
+                <a class="tracks-item-artist-link" href="/">j-hope</a>
+              </p>
+              <section class="regular-tags tracks-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">rock</a></li>
+                  <li class="tag"><a class="tag-link" href="/">hip-hop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">rap</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="tracks-item-wrap">
+            <img class="cover-art"
+              src="https://lastfm.freetls.fastly.net/i/u/300x300/e16905d22e5913535a8c6acadc781659.jpg" loading="lazy">
+            <div class="tracks-item ">
+              <h3 class="tracks-item-name">
+                <a href="/" class="tracks-item-name-link ">Left and Right</a>
+              </h3>
+              <p class="tracks-item-artist">
+                <a class="tracks-item-artist-link" href="/">Charlie Puth</a>
+              </p>
+              <section class="regular-tags tracks-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">pop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">jungkook</a></li>
+                  <li class="tag"><a class="tag-link" href="/">2022</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="tracks-item-wrap">
+            <img class="cover-art"
+              src="https://lastfm.freetls.fastly.net/i/u/300x300/70ff23ed846e3e4a14717863e71ba8dc.jpg" loading="lazy">
+            <div class="tracks-item ">
+              <h3 class="tracks-item-name">
+                <a href="/" class="tracks-item-name-link ">MORE</a>
+              </h3>
+              <p class="tracks-item-artist">
+                <a class="tracks-item-artist-link" href="/">j-hope</a>
+              </p>
+              <section class="regular-tags tracks-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">rock</a></li>
+                  <li class="tag"><a class="tag-link" href="/">hip-hop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">rap</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="tracks-item-wrap">
+            <img class="cover-art"
+              src="https://lastfm.freetls.fastly.net/i/u/300x300/70ff23ed846e3e4a14717863e71ba8dc.jpg" loading="lazy">
+            <div class="tracks-item ">
+              <h3 class="tracks-item-name">
+                <a href="/" class="tracks-item-name-link ">MORE</a>
+              </h3>
+              <p class="tracks-item-artist">
+                <a class="tracks-item-artist-link" href="/">j-hope</a>
+              </p>
+              <section class="regular-tags tracks-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">rock</a></li>
+                  <li class="tag"><a class="tag-link" href="/">hip-hop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">rap</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="tracks-item-wrap">
+            <img class="cover-art"
+              src="https://lastfm.freetls.fastly.net/i/u/300x300/70ff23ed846e3e4a14717863e71ba8dc.jpg" loading="lazy">
+            <div class="tracks-item ">
+              <h3 class="tracks-item-name">
+                <a href="/" class="tracks-item-name-link ">MORE</a>
+              </h3>
+              <p class="tracks-item-artist">
+                <a class="tracks-item-artist-link" href="/">j-hope</a>
+              </p>
+              <section class="regular-tags tracks-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">rock</a></li>
+                  <li class="tag"><a class="tag-link" href="/">hip-hop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">rap</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="tracks-item-wrap">
+            <img class="cover-art"
+              src="https://lastfm.freetls.fastly.net/i/u/300x300/70ff23ed846e3e4a14717863e71ba8dc.jpg" loading="lazy">
+            <div class="tracks-item ">
+              <h3 class="tracks-item-name">
+                <a href="/" class="tracks-item-name-link ">MORE</a>
+              </h3>
+              <p class="tracks-item-artist">
+                <a class="tracks-item-artist-link" href="/">j-hope</a>
+              </p>
+              <section class="regular-tags tracks-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">rock</a></li>
+                  <li class="tag"><a class="tag-link" href="/">hip-hop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">rap</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="tracks-item-wrap">
+            <img class="cover-art"
+              src="https://lastfm.freetls.fastly.net/i/u/300x300/70ff23ed846e3e4a14717863e71ba8dc.jpg" loading="lazy">
+            <div class="tracks-item ">
+              <h3 class="tracks-item-name">
+                <a href="/" class="tracks-item-name-link ">MORE</a>
+              </h3>
+              <p class="tracks-item-artist">
+                <a class="tracks-item-artist-link" href="/">j-hope</a>
+              </p>
+              <section class="regular-tags tracks-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">rock</a></li>
+                  <li class="tag"><a class="tag-link" href="/">hip-hop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">rap</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="tracks-item-wrap">
+            <img class="cover-art"
+              src="https://lastfm.freetls.fastly.net/i/u/300x300/70ff23ed846e3e4a14717863e71ba8dc.jpg" loading="lazy">
+            <div class="tracks-item ">
+              <h3 class="tracks-item-name">
+                <a href="/" class="tracks-item-name-link ">MORE</a>
+              </h3>
+              <p class="tracks-item-artist">
+                <a class="tracks-item-artist-link" href="/">j-hope</a>
+              </p>
+              <section class="regular-tags tracks-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">rock</a></li>
+                  <li class="tag"><a class="tag-link" href="/">hip-hop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">rap</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="tracks-item-wrap">
+            <img class="cover-art"
+              src="https://lastfm.freetls.fastly.net/i/u/300x300/70ff23ed846e3e4a14717863e71ba8dc.jpg" loading="lazy">
+            <div class="tracks-item ">
+              <h3 class="tracks-item-name">
+                <a href="/" class="tracks-item-name-link ">MORE</a>
+              </h3>
+              <p class="tracks-item-artist">
+                <a class="tracks-item-artist-link" href="/">j-hope</a>
+              </p>
+              <section class="regular-tags tracks-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">rock</a></li>
+                  <li class="tag"><a class="tag-link" href="/">hip-hop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">rap</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="tracks-item-wrap">
+            <img class="cover-art"
+              src="https://lastfm.freetls.fastly.net/i/u/300x300/e16905d22e5913535a8c6acadc781659.jpg" loading="lazy">
+            <div class="tracks-item ">
+              <h3 class="tracks-item-name">
+                <a href="/" class="tracks-item-name-link ">Left and Right</a>
+              </h3>
+              <p class="tracks-item-artist">
+                <a class="tracks-item-artist-link" href="/">Charlie Puth</a>
+              </p>
+              <section class="regular-tags tracks-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">pop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">jungkook</a></li>
+                  <li class="tag"><a class="tag-link" href="/">2022</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+
+          <li class="tracks-item-wrap">
+            <img class="cover-art"
+              src="https://lastfm.freetls.fastly.net/i/u/300x300/70ff23ed846e3e4a14717863e71ba8dc.jpg" loading="lazy">
+            <div class="tracks-item ">
+              <h3 class="tracks-item-name">
+                <a href="/" class="tracks-item-name-link ">MORE</a>
+              </h3>
+              <p class="tracks-item-artist">
+                <a class="tracks-item-artist-link" href="/">j-hope</a>
+              </p>
+              <section class="regular-tags tracks-tags">
+                <ul class="tags">
+                  <li class="tag"><a class="tag-link" href="/">rock</a></li>
+                  <li class="tag"><a class="tag-link" href="/">hip-hop</a></li>
+                  <li class="tag"><a class="tag-link" href="/">rap</a></li>
+                </ul>
+              </section>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+
+    <footer class="footer">
+
+    </footer>
+  </div>
+</body>
+
 </html>
