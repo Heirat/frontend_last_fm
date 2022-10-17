@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+
+        <div class="header">
+            <div class="header-inner-wrap">
+                <div class="header-logo">
+                    <a href="/"><img src="static/images/logo.png" alt=""></a>
+                </div>
+
+                <form class="header-search-form" id="header-search" action="/search" method="get" wfd-invisible="true">
+                    <div class="header-search-inner-wrap">
+                        <input id="header-search-field" class="header-search-field" type="text" name="q"
+                            placeholder="Search for music…">
+                        <button class="header-search-submit" type="submit">Search</button>
+                    </div>
+                </form>
+
+                <ul class="header-nav" id="header-nav">
+                    <li class="header-nav-item"><a class=" header-nav-control " href="/">Live</a></li>
+                    <li class="header-nav-item"><a class=" header-nav-control header-nav-control--active"
+                            href="/">Music</a>
+                    </li>
+                    <li class="header-nav-item"><a class=" header-nav-control " href="/">Charts</a></li>
+                    <li class="header-nav-item"><a class=" header-nav-control " href="/">Events</a></li>
+                    <li class="header-nav-item"><a class=" header-nav-control " href="/">Features</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <main class="main">
+            <div class="content-top">
+                <div class="content-top-inner-wrap">
+                    <h1 class="content-top-heading">Search results for "The Groove"</h1>
+                </div>
+            </div>
+            <div class="page-content">
+                <section class="section artist-section">
+                    <h2 class="section-heading-search">Artists</h2>
+                    <ol class="artist-results">
+                        <li class="artist-result-wrap">
+                            <img class="cover-art rounded"
+                                src="https://lastfm.freetls.fastly.net/i/u/avatar70s/a04bca11c6e440bc9721f2eeb363de50.jpg"
+                                loading="lazy">
+                            <div class="artist-result-item">
+                                <h3 class="artist-result-item-name">
+                                    <a href="/" class="artist-result-item-name-link">The Groove</a>
+                                </h3>
+                                <p class="artist-result-item-listeners">
+                                    13,065 listeners
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="artist-result-wrap">
+                            <img class="cover-art rounded"
+                                src="https://lastfm.freetls.fastly.net/i/u/avatar70s/a04bca11c6e440bc9721f2eeb363de50.jpg"
+                                loading="lazy">
+                            <div class="artist-result-item">
+                                <h3 class="artist-result-item-name">
+                                    <a href="/" class="artist-result-item-name-link">The Groove</a>
+                                </h3>
+                                <p class="artist-result-item-listeners">
+                                    13,065 listeners
+                                </p>
+                            </div>
+                        </li>
+                        <li class="artist-result-wrap">
+                            <img class="cover-art rounded"
+                                src="https://lastfm.freetls.fastly.net/i/u/avatar70s/a04bca11c6e440bc9721f2eeb363de50.jpg"
+                                loading="lazy">
+                            <div class="artist-result-item">
+                                <h3 class="artist-result-item-name">
+                                    <a href="/" class="artist-result-item-name-link">The Groove</a>
+                                </h3>
+                                <p class="artist-result-item-listeners">
+                                    13,065 listeners
+                                </p>
+                            </div>
+                        </li>
+                        <li class="artist-result-wrap">
+                            <img class="cover-art rounded"
+                                src="https://lastfm.freetls.fastly.net/i/u/avatar70s/a04bca11c6e440bc9721f2eeb363de50.jpg"
+                                loading="lazy">
+                            <div class="artist-result-item">
+                                <h3 class="artist-result-item-name">
+                                    <a href="/" class="artist-result-item-name-link">The Groove</a>
+                                </h3>
+                                <p class="artist-result-item-listeners">
+                                    13,065 listeners
+                                </p>
+                            </div>
+                        </li>
+                        <li class="artist-result-wrap">
+                            <img class="cover-art rounded"
+                                src="https://lastfm.freetls.fastly.net/i/u/avatar70s/a04bca11c6e440bc9721f2eeb363de50.jpg"
+                                loading="lazy">
+                            <div class="artist-result-item">
+                                <h3 class="artist-result-item-name">
+                                    <a href="/" class="artist-result-item-name-link">The Groove</a>
+                                </h3>
+                                <p class="artist-result-item-listeners">
+                                    13,065 listeners
+                                </p>
+                            </div>
+                        </li>
+                        <li class="artist-result-wrap">
+                            <img class="cover-art rounded"
+                                src="https://lastfm.freetls.fastly.net/i/u/avatar70s/a04bca11c6e440bc9721f2eeb363de50.jpg"
+                                loading="lazy">
+                            <div class="artist-result-item">
+                                <h3 class="artist-result-item-name">
+                                    <a href="/" class="artist-result-item-name-link">The Groove</a>
+                                </h3>
+                                <p class="artist-result-item-listeners">
+                                    13,065 listeners
+                                </p>
+                            </div>
+                        </li>
+
+                    </ol>
+                </section>
+
+                <section class="section album-section">
+                    <h2 class="section-heading-search">Albums</h2>
+                    <ol class="album-results">
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/2b68150956cf46a49f09164a096418f0.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">In The Groove</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    Marvin Gaye
+                                </p>
+                            </div>
+                        </li>
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/adfb841d3783f57bf20e3a451537f62d.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">The Best Of</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    Groove Armada
+                                </p>
+                            </div>
+                        </li>
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/cc4d9b5c7c444080c0b7c29e553cff44.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">Hard Groove</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    The RH Factor
+                                </p>
+                            </div>
+                        </li>
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/2b68150956cf46a49f09164a096418f0.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">In The Groove</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    Marvin Gaye
+                                </p>
+                            </div>
+                        </li>
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/adfb841d3783f57bf20e3a451537f62d.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">The Best Of</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    Groove Armada
+                                </p>
+                            </div>
+                        </li>
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/2b68150956cf46a49f09164a096418f0.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">In The Groove</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    Marvin Gaye
+                                </p>
+                            </div>
+                        </li>
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/adfb841d3783f57bf20e3a451537f62d.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">The Best Of</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    Groove Armada
+                                </p>
+                            </div>
+                        </li>
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/cc4d9b5c7c444080c0b7c29e553cff44.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">Hard Groove</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    The RH Factor
+                                </p>
+                            </div>
+                        </li>
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/2b68150956cf46a49f09164a096418f0.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">In The Groove</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    Marvin Gaye
+                                </p>
+                            </div>
+                        </li>
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/adfb841d3783f57bf20e3a451537f62d.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">The Best Of</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    Groove Armada
+                                </p>
+                            </div>
+                        </li>
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/cc4d9b5c7c444080c0b7c29e553cff44.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">Hard Groove</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    The RH Factor
+                                </p>
+                            </div>
+                        </li>
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/2b68150956cf46a49f09164a096418f0.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">In The Groove</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    Marvin Gaye
+                                </p>
+                            </div>
+                        </li>
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/adfb841d3783f57bf20e3a451537f62d.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">The Best Of</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    Groove Armada
+                                </p>
+                            </div>
+                        </li>
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/cc4d9b5c7c444080c0b7c29e553cff44.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">Hard Groove</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    The RH Factor
+                                </p>
+                            </div>
+                        </li>
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/2b68150956cf46a49f09164a096418f0.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">In The Groove</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    Marvin Gaye
+                                </p>
+                            </div>
+                        </li>
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/adfb841d3783f57bf20e3a451537f62d.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">The Best Of</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    Groove Armada
+                                </p>
+                            </div>
+                        </li>
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/cc4d9b5c7c444080c0b7c29e553cff44.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">Hard Groove</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    The RH Factor
+                                </p>
+                            </div>
+                        </li>
+                        <li class="album-result-wrap">
+                            <img class="cover-art"
+                                src="https://lastfm.freetls.fastly.net/i/u/64s/2b68150956cf46a49f09164a096418f0.jpg"
+                                loading="lazy">
+                            <div class="album-result-item">
+                                <h3 class="album-result-item-name">
+                                    <a href="/" class="album-result-item-name-link">In The Groove</a>
+                                </h3>
+                                <p class="album-result-item-artist">
+                                    Marvin Gaye
+                                </p>
+                            </div>
+                        </li>
+
+
+                    </ol>
+                </section>
+
+                <section class="section tracks-section">
+                    <h2 class="section-heading-search">Tracks</h2>
+                    <table class="chartlist-table">
+                        <thead></thead>
+                        <tbody>
+                            <tr class="chartlist-row">
+                                <td class="chartlist-image">
+                                    <a href="/" class="cover-art">
+                                        <img class="chartlist-image-image"
+                                            src="https://lastfm.freetls.fastly.net/i/u/64s/7691d60eb3f040c0a6d7762bafa2d797.jpg">
+                                    </a>
+                                </td>
+                                <td class="chartlist-name">
+                                    <a class="chartlist-name-link" href="/">Groove Is in the Heart</a>
+                                </td>
+                                <td class="chartlist-artist">
+                                    <a class="chartlist-artist-link" href="/">Deee-Lite</a>
+                                </td>
+                                <td class="chartlist-duration">7:11</td>
+                            </tr>
+                            <tr class="chartlist-row">
+                                <td class="chartlist-image">
+                                    <a href="/" class="cover-art">
+                                        <img class="chartlist-image-image"
+                                            src="https://lastfm.freetls.fastly.net/i/u/64s/b20906d270a74f289af85ddfed522e84.jpg">
+                                    </a>
+                                </td>
+                                <td class="chartlist-name">
+                                    <a class="chartlist-name-link" href="/">At the River</a>
+                                </td>
+                                <td class="chartlist-artist">
+                                    <a class="chartlist-artist-link" href="/">Groove Armada</a>
+                                </td>
+                                <td class="chartlist-duration"></td>
+                            </tr>
+                            <tr class="chartlist-row">
+                                <td class="chartlist-image">
+                                    <a href="/" class="cover-art">
+                                        <img class="chartlist-image-image"
+                                            src="https://lastfm.freetls.fastly.net/i/u/64s/7691d60eb3f040c0a6d7762bafa2d797.jpg">
+                                    </a>
+                                </td>
+                                <td class="chartlist-name">
+                                    <a class="chartlist-name-link" href="/">Groove Is in the Heart</a>
+                                </td>
+                                <td class="chartlist-artist">
+                                    <a class="chartlist-artist-link" href="/">Deee-Lite</a>
+                                </td>
+                                <td class="chartlist-duration">7:11</td>
+                            </tr>
+                            <tr class="chartlist-row">
+                                <td class="chartlist-image">
+                                    <a href="/" class="cover-art">
+                                        <img class="chartlist-image-image"
+                                            src="https://lastfm.freetls.fastly.net/i/u/64s/a26c547d1f3bdab7f5682adfcd3a154e.jpg">
+                                    </a>
+                                </td>
+                                <td class="chartlist-name">
+                                    <a class="chartlist-name-link" href="/">Behind the Groove</a>
+                                </td>
+                                <td class="chartlist-artist">
+                                    <a class="chartlist-artist-link" href="/">Teena Marie</a>
+                                </td>
+                                <td class="chartlist-duration"></td>
+                            </tr>
+                            <tr class="chartlist-row">
+                                <td class="chartlist-image">
+                                    <a href="/" class="cover-art">
+                                        <img class="chartlist-image-image"
+                                            src="https://lastfm.freetls.fastly.net/i/u/64s/7691d60eb3f040c0a6d7762bafa2d797.jpg">
+                                    </a>
+                                </td>
+                                <td class="chartlist-name">
+                                    <a class="chartlist-name-link" href="/">Groove Is in the Heart</a>
+                                </td>
+                                <td class="chartlist-artist">
+                                    <a class="chartlist-artist-link" href="/">Deee-Lite</a>
+                                </td>
+                                <td class="chartlist-duration">7:11</td>
+                            </tr>
+                            <tr class="chartlist-row">
+                                <td class="chartlist-image">
+                                    <a href="/" class="cover-art">
+                                        <img class="chartlist-image-image"
+                                            src="https://lastfm.freetls.fastly.net/i/u/64s/a26c547d1f3bdab7f5682adfcd3a154e.jpg">
+                                    </a>
+                                </td>
+                                <td class="chartlist-name">
+                                    <a class="chartlist-name-link" href="/">Behind the Groove</a>
+                                </td>
+                                <td class="chartlist-artist">
+                                    <a class="chartlist-artist-link" href="/">Teena Marie</a>
+                                </td>
+                                <td class="chartlist-duration"></td>
+                            </tr>
+                            <tr class="chartlist-row">
+                                <td class="chartlist-image">
+                                    <a href="/" class="cover-art">
+                                        <img class="chartlist-image-image"
+                                            src="https://lastfm.freetls.fastly.net/i/u/64s/b20906d270a74f289af85ddfed522e84.jpg">
+                                    </a>
+                                </td>
+                                <td class="chartlist-name">
+                                    <a class="chartlist-name-link" href="/">At the River</a>
+                                </td>
+                                <td class="chartlist-artist">
+                                    <a class="chartlist-artist-link" href="/">Groove Armada</a>
+                                </td>
+                                <td class="chartlist-duration"></td>
+                            </tr>
+                            <tr class="chartlist-row">
+                                <td class="chartlist-image">
+                                    <a href="/" class="cover-art">
+                                        <img class="chartlist-image-image"
+                                            src="https://lastfm.freetls.fastly.net/i/u/64s/7691d60eb3f040c0a6d7762bafa2d797.jpg">
+                                    </a>
+                                </td>
+                                <td class="chartlist-name">
+                                    <a class="chartlist-name-link" href="/">Groove Is in the Heart</a>
+                                </td>
+                                <td class="chartlist-artist">
+                                    <a class="chartlist-artist-link" href="/">Deee-Lite</a>
+                                </td>
+                                <td class="chartlist-duration">7:11</td>
+                            </tr>
+                            <tr class="chartlist-row">
+                                <td class="chartlist-image">
+                                    <a href="/" class="cover-art">
+                                        <img class="chartlist-image-image"
+                                            src="https://lastfm.freetls.fastly.net/i/u/64s/a26c547d1f3bdab7f5682adfcd3a154e.jpg">
+                                    </a>
+                                </td>
+                                <td class="chartlist-name">
+                                    <a class="chartlist-name-link" href="/">Behind the Groove</a>
+                                </td>
+                                <td class="chartlist-artist">
+                                    <a class="chartlist-artist-link" href="/">Teena Marie</a>
+                                </td>
+                                <td class="chartlist-duration"></td>
+                            </tr>
+                            <tr class="chartlist-row">
+                                <td class="chartlist-image">
+                                    <a href="/" class="cover-art">
+                                        <img class="chartlist-image-image"
+                                            src="https://lastfm.freetls.fastly.net/i/u/64s/b20906d270a74f289af85ddfed522e84.jpg">
+                                    </a>
+                                </td>
+                                <td class="chartlist-name">
+                                    <a class="chartlist-name-link" href="/">At the River</a>
+                                </td>
+                                <td class="chartlist-artist">
+                                    <a class="chartlist-artist-link" href="/">Groove Armada</a>
+                                </td>
+                                <td class="chartlist-duration"></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </section>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+
+</html>
