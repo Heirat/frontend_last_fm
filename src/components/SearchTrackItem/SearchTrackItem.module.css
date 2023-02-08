@@ -1,0 +1,21 @@
+.content {
+    background: #fff;
+    display: grid;
+    grid-template-columns: 100px 350px 250px 50px;    
+    grid-gap: 0 1%;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.title {
+    font-weight: 700;    
+}
+
+.cover {
+    width: 32px;
+    height: 32px;    
+}
+
+.duration {
+    color: #999;
+}

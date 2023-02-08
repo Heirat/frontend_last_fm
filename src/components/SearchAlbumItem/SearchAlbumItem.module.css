@@ -1,0 +1,21 @@
+.content {
+    position: relative;
+    width: 400px;
+}
+
+.info {
+    position: absolute;    
+    font-size: 12px;
+    left: 70px;
+    top: 15px;    
+    margin: auto;
+}
+
+.cover {
+    width: 60px;
+    height: 60px;
+}
+
+.title {
+    font-weight: 700;
+}

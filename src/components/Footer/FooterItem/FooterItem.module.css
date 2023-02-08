@@ -1,0 +1,15 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    font-weight: 700;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.text {
+    margin-bottom: 7px;
+}
