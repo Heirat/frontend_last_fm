@@ -1,0 +1,25 @@
+.content {
+    position: relative;
+    width: 400px;
+}
+
+.cover {
+    width: 60px;
+    height: 60px;
+}
+
+.info {
+    position: absolute;    
+    font-size: 12px;
+    left: 70px;
+    top: 30px;    
+    margin: 0;            
+}
+
+.name {
+    font-weight: 700;
+}
+
+.listeners {
+    color: #999;
+}

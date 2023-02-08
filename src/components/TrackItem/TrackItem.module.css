@@ -1,0 +1,34 @@
+.content {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.info {
+    margin-left: 25px;
+    text-align: left;
+}
+
+.title {
+    margin-top: 40px;
+
+    font-weight: 700;
+    text-align: start;
+}
+
+.cover {
+    width: 80px;
+    height: 80px;
+    background: #60477b;
+}
+
+
+
+.genre {
+    margin-top: 4px;    
+    font-weight: 100;
+    font-size: 12px;
+    text-align: start;
+    color: #999;
+}

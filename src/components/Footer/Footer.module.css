@@ -1,0 +1,24 @@
+.content {    
+    display: grid;
+    height: 200px;
+    grid-template-columns: repeat(auto-fit, 150px);
+    grid-gap: 2vw;
+    justify-content: space-around;
+    padding: 60px 40px;
+    background-color: #111;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;    
+}
+
+.head-text {
+    font-weight: 700;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.child-text {
+    margin-bottom: 7px;
+}

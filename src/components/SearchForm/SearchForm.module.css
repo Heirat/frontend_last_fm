@@ -1,0 +1,18 @@
+.content {
+    margin: 70px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.input {
+    width: 70%;        
+    font-size: 18px;
+    padding: 0.5rem;
+    height: 40px;
+}
+
+.button {    
+    height: 40px;
+    width: 80px;    
+    border: none;    
+}
