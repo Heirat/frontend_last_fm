@@ -1,117 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta charset="utf-8" />  
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
-  <link rel="stylesheet" href="styles/style.css">
-  <script src="./api.js" defer></script>
-  <script src="./index.js" defer></script>
-  <title>Червинский А.А. ИВТ-41</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta
+            name="description"
+            content="Web site created using create-react-app"
+    />
+    <title>Червинский А.А. ИВТ-41</title>
 </head>
-
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root">
-
-    <div class="header">
-      <div class="header-inner-wrap">
-        <div class="header-logo">
-          <a href="/"><img src="static/images/logo.png" alt="last.fm"></a>
-        </div>
-
-        <form class="header-search-form" id="header-search" action="/public/search/index.html" method="get">
-          <div class="header-search-inner-wrap">
-            <input id="header-search-field" class="header-search-field" type="text" placeholder="Search for music…"
-              type="text" name="q">
-            <button class="header-search-submit" type="submit">Search</button>
-          </div>
-        </form>
-
-        <ul class="header-nav" id="header-nav">
-          <li class="header-nav-item"><a class=" header-nav-control " href="/">Live</a></li>
-          <li class="header-nav-item"><a class=" header-nav-control header-nav-control--active" href="/">Music</a>
-          </li>
-          <li class="header-nav-item"><a class=" header-nav-control " href="/">Charts</a></li>
-          <li class="header-nav-item"><a class=" header-nav-control " href="/">Events</a></li>
-          <li class="header-nav-item"><a class=" header-nav-control " href="/">Features</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <main class="main">
-      <h1 class="main-heading">Music</h1>
-      <section class="popular-artists">
-        <h2 class="section-heading">Hot right now</h2>
-        <ol class="artists">
-        </ol>
-      </section>
-
-      <section class="popular-tracks">
-        <h2 class="section-heading">Popular tracks</h2>
-        <ol class="tracks">
-        </ol>
-      </section>
-    </main>
-
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-top-row">
-          <div class="footer-top-col">
-            <h2 class="footer-heading">Company</h2>
-            <ul class="footer-links">
-              <li><a class="footer-link" href="/about">About Last.fm</a></li>
-              <li><a class="footer-link" href="/about/contact">Contact Us</a></li>
-              <li><a class="footer-link" href="/about/jobs">Jobs</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-top-col">
-            <h2 class="footer-heading">Help</h2>
-            <ul class="footer-links">
-              <li><a class="footer-link" href="/about/trackmymusic">Track My Music</a></li>
-              <li><a class="footer-link" href="https://support.last.fm/" target="_BLANK">Community Support</a></li>
-              <li><a class="footer-link" href="/help/guidelines">Community Guidelines</a></li>
-              <li><a class="footer-link" href="/help/faq" target="_BLANK">Help</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-top-col">
-            <h2 class="footer-heading">Goodies</h2>
-            <ul class="footer-links">
-              <li><a class="footer-link" href="/about/trackmymusic">Download Scrobbler</a></li>
-              <li><a class="footer-link" href="/api">Developer API</a></li>
-              <li><a class="footer-link" href="/music/+free-music-downloads">Free Music Downloads</a></li>
-              <li><a class="footer-link" class="footer-link" href="https://store.last.fm">Merchandise</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-top-col">
-            <h2 class="footer-heading">Account</h2>
-            <ul class="footer-links">
-              <li><a class="footer-link" href="/join">Sign Up</a></li>
-              <li><a class="footer-link" href="/login">Log In</a></li>
-              <li><a class="footer-link" href="/pro">Subscribe</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-top-col">
-            <h2 class="footer-heading">Follow Us</h2>
-            <ul class="footer-links">
-              <li><a class="footer-link" href="https://www.facebook.com/lastfm">Facebook</a></li>
-              <li><a class="footer-link" href="https://twitter.com/lastfm">Twitter</a></li>
-              <li><a class="footer-link" href="https://www.instagram.com/last_fm">Instagram</a></li>
-              <li><a class="footer-link" href="https://www.youtube.com/user/lastfm">YouTube</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root" class="wrapper"></div>
 </body>
-
 </html>
